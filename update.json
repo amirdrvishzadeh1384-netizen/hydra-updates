@@ -1,0 +1,5 @@
+{
+ "format": 1,
+ "payload": "{\"app\":\"studio.otiner.hydrastudio\",\"version\":\"0.10.0\",\"released\":\"2026-11-05T14:46:32.090Z\",\"notes\":[\"Update Hydra from inside the panel\",\"Panel checks for new versions by itself\",\"Go back to the previous version if something breaks\"],\"restart\":false,\"package\":{\"urls\":[\"https://raw.githubusercontent.com/amirdrvishzadeh1384-netizen/hydra-updates/main/HydraStudio-update-0.10.0.zip\"],\"sha256\":\"3094eb968bbfa648bcc70129ee0a22edacfe318a4375b406e53dd8d67430c115\",\"size\":350946}}",
+ "signature": "L0oq3JuOCW9YM1BLO4XYq1XjFt+jEI+7a1z9z/40fQ0rDFn37hMHEj8UpBVG4cuJw/s0euZHLikpKrLcbidvdXyw+I8kqqnSOPZTxSyiCzF7uGUTWrrkIhOiW9vLDSEJTcPh1DdtDEPz8NarALwm04CCBHKS5eTShX+LeTeWHPKoKKxUDEtu3ZDa4Igg1JbkNByuDl0oe4trtYZReRAQunovWKgZ9BNqbS0Or4R2TG4wA2IAQ6ysWxaagbZiBFCJXJZNEgFfZJe3ppebDhMGXb4+Jt/vWB++JmUvtgLkq2LDqOHCpo9B7MfvOu441DXvHfA+vQeX1rkFp6tUF2b9DmIsiac8OR00mHOf4vib74+N/s/3rLxWzHSyZEP+YQWxs3F0Lm+imNEEEZGrB3tA6x8ZcHZu8sZpJYKuYAqt43aTI1yOQODSV1HCsIGzotnBf2ziQAuBjRwRZPNdIMJ96amfa+svT26yfJtAPhVtjHJ4Tb4EUs7bxvXCjSnni6H/"
+}
