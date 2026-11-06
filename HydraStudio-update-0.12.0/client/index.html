@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hydra Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" data-mode="presets">
+    <header class="top">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect class="m-bg" width="32" height="32" rx="10"/>
+          <circle class="m-ring" cx="15" cy="17" r="6.6" fill="none" stroke-width="2.4"/>
+          <circle class="m-dot" cx="23" cy="9" r="2.2"/>
+        </svg>
+        <div class="brand-text">
+          <h1>Hydra Studio</h1>
+          <span class="eyebrow">Motion toolkit</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button id="btnTheme" class="icon-btn" title="Theme" aria-label="Theme colors"></button>
+        <button id="btnSettings" class="icon-btn" title="Settings" aria-label="Settings"></button>
+      </div>
+    </header>
+
+    <div id="updBanner" class="upd hidden" role="status" aria-live="polite"></div>
+
+    <div class="modewrap">
+      <nav class="modebar" id="modeBar" role="tablist" aria-label="Sections"></nav>
+      <button type="button" id="btnTabs" class="modemore" title="Choose and arrange the sections" aria-label="Arrange sections"></button>
+    </div>
+
+    <div class="status-row">
+      <div id="selPill" class="pill" role="status" title="Click to refresh">
+        <span class="dot"></span><span id="selText">Connecting&hellip;</span>
+      </div>
+      <div id="dirSeg" class="dir-seg" role="group" aria-label="Text animation direction">
+        <button type="button" data-dir="in" title="Text enters (animation starts at the layer's in-point)">In</button>
+        <button type="button" data-dir="out" title="Text leaves (animation ends at the layer's out-point)">Out</button>
+      </div>
+    </div>
+
+    <div class="tools">
+      <label class="search">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13.2 13.2L17 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Search presets" autocomplete="off" spellcheck="false">
+      </label>
+      <button id="btnView" class="icon-btn view-btn" title="Card size" aria-label="Change card size"></button>
+      <button id="btnAdd" class="add-btn" title="Add presets"></button>
+    </div>
+
+    <nav class="rail"><div id="tabs" class="rail-scroll"></div></nav>
+
+    <section id="fxPanel" class="fx-panel">
+      <div class="stage-wrap">
+        <div class="stage" id="stage">
+          <canvas id="stageCv" aria-label="Effect preview"></canvas>
+          <span class="stage-name" id="stageName"></span>
+          <button type="button" id="stageSlow" class="stage-slow" title="Play the preview at quarter speed" aria-pressed="false">&frac14;&times;</button>
+          <span class="stage-tag">Preview &middot; a sketch, not a render</span>
+        </div>
+      </div>
+      <div class="stage-cap" id="stageCap"></div>
+      <div class="chain" id="fxChain" aria-label="Built from these After Effects effects"></div>
+      <div class="fx-controls">
+        <div id="fxTarget" class="dir-seg" role="group" aria-label="Where to put the effect">
+          <button type="button" data-t="adj" title="Creates an adjustment layer above your selection">New adjustment layer</button>
+          <button type="button" data-t="layers" title="Puts the effect straight onto the selected layers">Selected layers</button>
+        </div>
+        <label class="intensity"><span id="fxIntLbl">Power</span><input id="fxInt" class="range" type="range" min="25" max="200" step="5" value="100"><b id="fxIntVal">1.0&times;</b></label>
+      </div>
+      <div class="fx-controls" id="fxLenRow">
+        <label class="intensity"><span title="How slowly the keyframes are spread. Higher = easier to see on real footage">Length</span><input id="fxLen" class="range" type="range" min="100" max="400" step="25" value="200"><b id="fxLenVal">2&times;</b></label>
+      </div>
+    </section>
+
+    <main id="list" class="list"></main>
+
+    <section id="toolsPanel" class="tools-panel"></section>
+
+    <section id="studio" class="studio" aria-label="Workshop"></section>
+
+    <footer class="dock">
+      <div class="dock-main">
+        <div id="dockGlyph" class="dock-glyph"></div>
+        <div class="dock-text">
+          <div id="dockName" class="dock-name">Choose a preset</div>
+          <div id="dockHint" class="dock-hint"></div>
+        </div>
+        <button id="btnApply" class="apply" disabled><span class="apply-label">Apply</span></button>
+      </div>
+    </footer>
+  </div>
+
+  <input id="fileInput" type="file" accept=".ffx" multiple hidden>
+  <div id="sheetRoot"></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="js/cep.js"></script>
+  <script src="js/update-config.js"></script>
+  <script src="js/updater.js"></script>
+  <script src="js/recipes.js"></script>
+  <script src="js/pop.js"></script>
+  <script src="js/stage.js"></script>
+  <script src="js/studio.js"></script>
+  <script src="js/studio-expr.js"></script>
+  <script src="js/studio-timer.js"></script>
+  <script src="js/studio-photo.js"></script>
+  <script src="js/studio-morph.js"></script>
+  <script src="js/studio-glass.js"></script>
+  <script src="js/studio-pixel.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

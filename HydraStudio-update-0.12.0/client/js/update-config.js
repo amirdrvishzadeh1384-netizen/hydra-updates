@@ -1,0 +1,6 @@
+// Where this copy of Hydra Studio looks for updates, and the public key that proves an update really comes from Otiner Studio.
+// Written by tools/publish.js from tools/publish-config.json. The public key is safe to share. Never put the private key here.
+window.HYDRA_UPDATE = {
+  feeds: ["https://amirdrvishzadeh1384-netizen.github.io/hydra-updates/update.json","https://raw.githubusercontent.com/amirdrvishzadeh1384-netizen/hydra-updates/main/update.json","https://cdn.jsdelivr.net/gh/amirdrvishzadeh1384-netizen/hydra-updates@main/update.json"],
+  publicKey: ["-----BEGIN PUBLIC KEY-----","MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAz0N5IyoUyV/vMDZyA0Ib","ZclhOkbYpdniM6C/Tk2oS/X6nPf6LbhkTgHaWlM2gC/VV2Ysn0PKIBKzonIIC2f4","EIN9bZlFI0b2jLdVQhDHbtf6aUf0c1yqvNc3e6DWVtvPX9X0vvIdioMS6anJ1oWI","fh8bv7inodKCzOA87aF/YuLld+i8uVzfxhDsi5xJwH63kZXtn4LOF5IPotbBRQUc","GX65S8PSxfGAL/lb49IjZIbKAfqYjmIbQQpc55lFPD+SqW0jxVG7TkeZAnZkZREg","S7IrnyVmc+7ekZJ9tG20xeVOjYbp9B4Al42ii8uj/ymd+bmQ4ac/wXNliZVzNe9A","dflPMsqCPEDrMKxs7iTj2ymDrfOm1XeiGySdZiD0a8ingGov0ZkUqAMAyr+rDYNy","I7OzkxT3cMvqLGyTPy4/mjNczlXge/NNXUZwKUzUenQFqcwYleKSK7AEs+oAU0xX","WXtUSvV1ltGy1eryhtb+8uyRmI6/uzbRx9wVuvK23kiNAgMBAAE=","-----END PUBLIC KEY-----"].join("\n")
+};
